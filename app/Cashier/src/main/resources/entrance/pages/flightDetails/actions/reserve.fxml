@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.flightDetails.actions.reserve.ReserveFormController">
+   <children>
+      <Label fx:id="logoLabel" layoutX="100.0" layoutY="105.0" maxHeight="40.0" minHeight="40.0" stylesheets="@styles.css" text="Reserve ticket" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="lastNameField" layoutX="258.0" layoutY="70.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="41.0" layoutY="73.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Last name" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="70.0" />
+      <TextField fx:id="firstNameField" layoutX="126.0" layoutY="79.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="130.0" />
+      <Label layoutX="51.0" layoutY="83.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="First name" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="130.0" />
+      <TextField fx:id="secondNameField" layoutX="258.0" layoutY="190.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="190.0" />
+      <Label layoutX="61.0" layoutY="93.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Second name" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="190.0" />
+      <TextField fx:id="ageField" layoutX="257.0" layoutY="250.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="250.0" />
+      <Label layoutX="71.0" layoutY="103.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Age" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="250.0" />
+      <ComboBox fx:id="genderBox" focusTraversable="false" layoutX="250.0" layoutY="315.0" minHeight="40.0" minWidth="250.0" pickOnBounds="false" prefWidth="150.0" stylesheets="@styles.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="310.0" />
+      <Label layoutX="81.0" layoutY="113.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Gender" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="310.0" />
+      <TextField fx:id="flightNumberField" editable="false" layoutX="250.0" layoutY="390.0" minHeight="40.0" minWidth="250.0" stylesheets="@styles.css" AnchorPane.topAnchor="370.0" />
+      <Label layoutX="91.0" layoutY="123.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Flight №" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="370.0" />
+      <Label layoutX="37.0" layoutY="430.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Day" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="430.0" />
+      <Label layoutX="47.0" layoutY="440.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Time" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="490.0" />
+      <Button fx:id="okButton" layoutX="250.0" layoutY="565.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onMouseClicked="#onAcceptButtonClicked" stylesheets="@styles.css" text="OK" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="620.0" />
+      <Button layoutX="116.0" layoutY="620.0" minHeight="50.0" minWidth="80.0" mnemonicParsing="false" onMouseClicked="#onPrevButtonClicked" prefHeight="50.0" prefWidth="114.0" stylesheets="@styles.css" text="GO BACK" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="620.0" />
+      <RadioButton fx:id="hasBaggage" layoutX="259.0" layoutY="556.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="80.0" selected="true" text="Yes" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="556.0">
+         <font>
+            <Font name="Courier New" size="19.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="baggage" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="375.0" layoutY="556.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="87.0" text="No" toggleGroup="$baggage" AnchorPane.leftAnchor="375.0" AnchorPane.topAnchor="556.0">
+         <font>
+            <Font name="Courier New" size="19.0" />
+         </font>
+      </RadioButton>
+      <JFXTimePicker fx:id="clock" focusTraversable="false" layoutX="642.0" layoutY="565.0" maxHeight="40.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="285.0" stylesheets="@../../../jfx.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="490.0" />
+      <JFXDatePicker fx:id="calendar" focusTraversable="false" layoutX="250.0" layoutY="436.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="285.0" stylesheets="@../../../jfx.css" AnchorPane.topAnchor="430.0" />
+      <Label layoutX="57.0" layoutY="450.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Baggage" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="550.0" />
+      <Label fx:id="resultLabel" alignment="TOP_LEFT" layoutX="581.0" layoutY="70.0" prefHeight="274.0" prefWidth="404.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="580.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

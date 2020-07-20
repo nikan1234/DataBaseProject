@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.flightDetails.actions.refund.RefundFormController">
+   <children>
+      <Label fx:id="logoLabel" layoutX="100.0" layoutY="105.0" maxHeight="40.0" minHeight="40.0" stylesheets="@styles.css" text="Return ticket" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="ticketIdField" layoutX="258.0" layoutY="70.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="41.0" layoutY="73.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Ticket ID" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="37.0" layoutY="430.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Day" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="130.0" />
+      <Label layoutX="47.0" layoutY="440.0" maxHeight="200.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Time" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="190.0" />
+      <Button fx:id="okButton" layoutX="250.0" layoutY="565.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onMouseClicked="#onAcceptButtonClicked" stylesheets="@styles.css" text="OK" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="300.0" />
+      <Button layoutX="116.0" layoutY="615.0" minHeight="50.0" minWidth="80.0" mnemonicParsing="false" onMouseClicked="#onPrevButtonClicked" prefHeight="50.0" prefWidth="114.0" stylesheets="@styles.css" text="GO BACK" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="300.0" />
+      <JFXTimePicker fx:id="clock" layoutX="642.0" layoutY="565.0" maxHeight="40.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="285.0" stylesheets="@../../../jfx.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="190.0" />
+      <JFXDatePicker fx:id="calendar" layoutX="250.0" layoutY="436.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="285.0" stylesheets="@../../../jfx.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="130.0" />
+      <Label fx:id="resultLabel" alignment="TOP_LEFT" layoutX="581.0" layoutY="70.0" prefHeight="274.0" prefWidth="404.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="580.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

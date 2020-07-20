@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.drivers.filters.DriverGenderFilter">
+   <children>
+      <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="Driver gender" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ComboBox fx:id="genderBox" focusTraversable="false" maxHeight="40.0" minHeight="40.0" pickOnBounds="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="917.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.timetable.actions.remove.RemoveFlightFormController">
+   <children>
+      <Label fx:id="logoLabel" layoutX="78.0" layoutY="36.0" minHeight="40.0" stylesheets="@styles.css" text="Add flight" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="78.0" layoutY="60.0" prefHeight="40.0" prefWidth="85.0" stylesheets="@styles.css" text="Flight #" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="400.0" />
+      <Button layoutX="168.0" layoutY="498.0" minHeight="40.0" mnemonicParsing="false" onMouseClicked="#removeFlightButton" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" text="REMOVE FLIGHT" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="490.0" />
+      <Button layoutX="52.0" layoutY="565.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" onMouseClicked="#onPrevButtonClicked" stylesheets="@styles.css" text="GO BACK" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" />
+      <TextField fx:id="flightNumber" layoutX="168.0" layoutY="60.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="400.0" />
+      <Label fx:id="resultLabel" alignment="TOP_LEFT" layoutX="436.0" layoutY="499.0" minHeight="40.0" minWidth="100.0" prefHeight="76.0" prefWidth="431.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="499.0" />
+      <JFXListView fx:id="flightsTable" focusTraversable="false" layoutX="40.0" layoutY="60.0" pickOnBounds="false" prefHeight="300.0" prefWidth="560.0" stylesheets="@styles.css" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="60.0" />
+   </children>
+</AnchorPane>

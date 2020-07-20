@@ -1,0 +1,129 @@
+.button {
+    -fx-background-color: rgb(48, 48, 48);
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.button:hover {
+    -fx-background-color: rgb(60, 60, 60);
+}
+
+.label {
+    -fx-background-color: rgb(48, 48, 48);
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+#homeButton {
+    -fx-background-image: url("home.png");
+}
+
+#logoLabel {
+    -fx-font-size: 30;
+    -fx-text-fill: green;
+    -fx-font-family: "Courier New";
+}
+
+#passengersButton {
+    -fx-background-image: url("passenger.png");
+}
+
+
+.jfx-hamburger {
+    -fx-background-color: rgb(48, 48, 48);
+}
+
+.jfx-hamburger:hover {
+    -fx-background-color: rgb(60, 60, 60);
+}
+
+.jfx-hamburger StackPane {
+	-fx-background-color: green;
+}
+
+#ticketsButton {
+    -fx-background-image: url("ticket.png");
+}
+
+#menu {
+    -fx-background-color: #88F;
+    -fx-spacing: 5;
+}
+
+
+.text-field {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 18;
+    -fx-text-fill: rgb(48, 48, 48);
+    -fx-background-color: -fx-text-box-border, white;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: green, white;
+}
+
+.combo-box .list-cell
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em;
+
+    -fx-font-family: "Courier New";
+    -fx-font-size: 18;
+    -fx-text-fill: rgb(48, 48, 48);
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-padding: 4 0 4 5;
+
+    /* No alternate highlighting */
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.combo-box-base
+{
+    -fx-background-color: white, white, green, white;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0 0 -1 0, 0, 1 1 0 1, 1;
+    -fx-padding: 0;
+}
+
+.combo-box-base:hover
+{
+    -fx-color: -fx-hover-base;
+}
+
+.combo-box-base:showing
+{
+    -fx-color: -fx-pressed-base;
+}
+
+.combo-box-base:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}

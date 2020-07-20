@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.drivers.personalPage.PersonalPageController">
+   <children>
+      <Label fx:id="logoLabel" layoutX="221.0" layoutY="14.0" minHeight="40.0" prefHeight="40.0" stylesheets="@styles.css" text="Driver information" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="lastName" layoutX="41.0" layoutY="80.0" minHeight="40.0" minWidth="400.0" stylesheets="@styles.css" text="lastName" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="80.0" />
+      <Label fx:id="firstName" layoutX="41.0" layoutY="110.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" text="firstName" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="110.0" />
+      <Label fx:id="secondName" layoutX="41.0" layoutY="140.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" text="secondName" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="140.0" />
+      <Label fx:id="birthDate" layoutX="41.0" layoutY="180.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" text="birthDate" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="180.0" />
+      <Label fx:id="gender" layoutX="41.0" layoutY="210.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" text="gender" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="210.0" />
+      <Label fx:id="speciality" layoutX="42.0" layoutY="286.0" minHeight="40.0" minWidth="200.0" text="speciality" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="hireDate" layoutX="42.0" layoutY="316.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" text="hireDate" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="310.0" />
+      <Label fx:id="id" layoutX="41.0" layoutY="55.0" minHeight="40.0" minWidth="248.0" prefHeight="40.0" prefWidth="248.0" text="ID" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="salary" layoutX="41.0" layoutY="346.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" text="salary" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="340.0" />
+      <Label fx:id="childCount" layoutX="51.0" layoutY="220.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" text="child count" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="240.0" />
+      <Label layoutY="92.0" minHeight="40.0" minWidth="100.0" stylesheets="@styles.css" text="Last name:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="80.0" />
+      <Label layoutX="10.0" layoutY="102.0" minHeight="40.0" minWidth="100.0" stylesheets="@styles.css" text="First name:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="110.0" />
+      <Label layoutX="20.0" layoutY="112.0" minHeight="40.0" minWidth="100.0" stylesheets="@styles.css" text="Second name:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="140.0" />
+      <Label layoutX="35.0" layoutY="180.0" minHeight="40.0" minWidth="100.0" stylesheets="@styles.css" text="Birthday:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="180.0" />
+      <Label layoutX="45.0" layoutY="190.0" minHeight="40.0" minWidth="100.0" stylesheets="@styles.css" text="Gender:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="210.0" />
+      <Label layoutX="55.0" layoutY="200.0" minHeight="40.0" minWidth="100.0" stylesheets="@styles.css" text="Child count:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0" />
+      <Label layoutX="32.0" layoutY="310.0" minHeight="40.0" minWidth="100.0" stylesheets="@styles.css" text="Hire date:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="310.0" />
+      <Label layoutX="42.0" layoutY="320.0" minHeight="40.0" minWidth="100.0" stylesheets="@styles.css" text="Salary:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="340.0" />
+      <Label layoutX="35.0" layoutY="280.0" minHeight="40.0" minWidth="100.0" text="Speciality:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="21.0" layoutY="492.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" onMouseClicked="#onPrevButtonClicked" stylesheets="@styles.css" text="GO BACK" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="40.0" />
+      <AnchorPane layoutX="320.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="461.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label alignment="CENTER" layoutX="110.0" layoutY="23.0" minHeight="40.0" text="TEAM INFO" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="100.0" text="Team id:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Courier New" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="80.0" minHeight="40.0" prefHeight="40.0" prefWidth="100.0" text="Team type:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font name="Courier New" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="teamId" layoutX="105.0" layoutY="62.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="334.0" stylesheets="@../styles.css" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+            <Label fx:id="teamType" layoutX="105.0" layoutY="90.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="294.0" stylesheets="@../styles.css" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
+            <ListView fx:id="medicalCard" focusTraversable="false" layoutX="14.0" layoutY="130.0" pickOnBounds="false" prefHeight="150.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="180.0" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="140.0" minHeight="40.0" text="MEDICAL EXAMINATIONS" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="140.0">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="examinationDatePicker" layoutX="295.0" layoutY="180.0" prefHeight="40.0" prefWidth="215.0" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="180.0" />
+            <Button fx:id="addExamination" layoutX="295.0" layoutY="235.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" stylesheets="@styles.css" text="ADD EXAMINATION" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="240.0" />
+            <Button fx:id="deleteExamination" layoutX="295.0" layoutY="290.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" stylesheets="@styles.css" text="DELETE EXAMINATION" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="290.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

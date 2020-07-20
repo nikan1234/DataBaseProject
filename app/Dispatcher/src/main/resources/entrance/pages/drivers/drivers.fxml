@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.drivers.DriversFormController">
+   <children>
+      <TableView fx:id="employeesTable" focusTraversable="false" layoutX="124.0" layoutY="45.0" pickOnBounds="false" prefHeight="350.0" prefWidth="200.0" stylesheets="@styles.css" AnchorPane.leftAnchor="410.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="90.0" />
+      <Label fx:id="logoLabel" layoutX="152.0" layoutY="6.0" maxHeight="40.0" minHeight="40.0" stylesheets="@styles.css" text="Drivers base" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <StackPane fx:id="filters" layoutX="182.0" layoutY="50.0" maxHeight="320.0" minHeight="320.0" minWidth="200.0" prefHeight="320.0" prefWidth="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="caseAllDrivers" layoutX="27.0" layoutY="50.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="ALL DRIVERS" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="90.0" />
+      <Label alignment="CENTER" layoutX="30.0" layoutY="50.0" minHeight="30.0" minWidth="160.0" style="-fx-text-fill: green;" stylesheets="@styles.css" text="Search" textFill="#00ff4d" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="Courier New" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="caseGender" layoutX="37.0" layoutY="60.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="BY GENDER" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="150.0" />
+      <Button fx:id="caseAge" layoutX="47.0" layoutY="70.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="BY AGE" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="210.0" />
+      <Button fx:id="caseSalary" layoutX="40.0" layoutY="285.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="BY SALARY" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="270.0" />
+      <Button fx:id="caseExamination" layoutX="30.0" layoutY="330.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="EXAMINATION YEAR" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="330.0" />
+      <Button fx:id="searchButton" layoutX="30.0" layoutY="460.0" maxHeight="40.0" maxWidth="160.0" minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" stylesheets="@styles.css" text="SEARCH" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="390.0" />
+      <Label fx:id="employeeCount" layoutX="410.0" layoutY="519.0" prefHeight="30.0" prefWidth="160.0" stylesheets="@styles.css" AnchorPane.leftAnchor="410.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="450.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="1092.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.routes.actions.add.AddRouteFormController">
+   <children>
+      <Label fx:id="logoLabel" focusTraversable="false" layoutX="68.0" layoutY="83.0" minHeight="40.0" pickOnBounds="false" stylesheets="@styles.css" text="Add new route" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ListView fx:id="stationList" focusTraversable="false" layoutX="38.0" layoutY="90.0" minHeight="370.0" minWidth="400.0" pickOnBounds="false" prefHeight="350.0" prefWidth="400.0" stylesheets="@styles.css" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="90.0" />
+      <ComboBox fx:id="toStation" focusTraversable="false" layoutX="460.0" layoutY="290.0" minHeight="40.0" minWidth="150.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="290.0" />
+      <Label alignment="CENTER" focusTraversable="false" layoutX="460.0" layoutY="60.0" minWidth="250.0" pickOnBounds="false" prefHeight="20.0" prefWidth="250.0" stylesheets="@styles.css" text="Start station:" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="60.0" />
+      <Label alignment="CENTER" focusTraversable="false" layoutX="460.0" layoutY="180.0" minWidth="150.0" pickOnBounds="false" prefHeight="20.0" prefWidth="250.0" stylesheets="@styles.css" text="FROM:" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="180.0" />
+      <ComboBox fx:id="startStation" focusTraversable="false" layoutX="460.0" layoutY="101.0" minHeight="40.0" minWidth="250.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="90.0" />
+      <TextField fx:id="durationField" focusTraversable="false" layoutX="460.0" layoutY="370.0" minHeight="0.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="370.0" />
+      <Label alignment="CENTER" focusTraversable="false" layoutX="460.0" layoutY="340.0" minHeight="0.0" pickOnBounds="false" prefHeight="20.0" prefWidth="250.0" stylesheets="@styles.css" text="Duration:" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="340.0" />
+      <Label focusTraversable="false" layoutX="717.0" layoutY="370.0" pickOnBounds="false" prefHeight="40.0" prefWidth="55.0" stylesheets="@styles.css" text="hours" />
+      <Button fx:id="addButton" focusTraversable="false" layoutX="460.0" layoutY="420.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" text="ADD" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="420.0" />
+      <TextField fx:id="fromStation" focusTraversable="false" layoutX="460.0" layoutY="210.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="210.0" />
+      <Label alignment="CENTER" focusTraversable="false" layoutX="460.0" layoutY="260.0" minWidth="150.0" pickOnBounds="false" prefHeight="20.0" prefWidth="250.0" stylesheets="@styles.css" text="TO:" AnchorPane.topAnchor="260.0" />
+      <Label fx:id="resultLabel" focusTraversable="false" layoutX="725.0" layoutY="420.0" minWidth="150.0" pickOnBounds="false" prefHeight="40.0" prefWidth="314.0" stylesheets="@styles.css" AnchorPane.leftAnchor="725.0" AnchorPane.topAnchor="420.0" />
+      <TextField fx:id="routeId" focusTraversable="false" layoutX="130.0" layoutY="494.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="490.0" />
+      <Label focusTraversable="false" layoutX="30.0" layoutY="494.0" minHeight="40.0" minWidth="100.0" pickOnBounds="false" prefHeight="40.0" prefWidth="106.0" stylesheets="@styles.css" text="Route id:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="490.0" />
+      <Label focusTraversable="false" layoutX="30.0" layoutY="547.0" minHeight="40.0" minWidth="100.0" pickOnBounds="false" prefHeight="40.0" prefWidth="106.0" stylesheets="@styles.css" text="Route type:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="550.0" />
+      <ComboBox fx:id="routeType" focusTraversable="false" layoutX="150.0" layoutY="550.0" minHeight="40.0" minWidth="150.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="550.0" />
+      <Button fx:id="createRoute" focusTraversable="false" layoutX="30.0" layoutY="627.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="40.0" prefWidth="400.0" stylesheets="@styles.css" text="CREATE ROUTE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="625.0" />
+      <Button focusTraversable="false" layoutX="30.0" layoutY="713.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onMouseClicked="#onPrevButtonClicked" pickOnBounds="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" text="GO BACK" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" />
+      <Label fx:id="finalLabel" alignment="TOP_LEFT" focusTraversable="false" layoutX="460.0" layoutY="632.0" minWidth="150.0" pickOnBounds="false" prefHeight="112.0" prefWidth="582.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="460.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="632.0">
+         <font>
+            <Font name="Courier New" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

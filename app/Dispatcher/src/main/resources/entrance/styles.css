@@ -1,0 +1,73 @@
+.button {
+    -fx-background-color: rgb(48, 48, 48);
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+
+.button:hover {
+    -fx-background-color: rgb(60, 60, 60);
+}
+
+.label {
+    -fx-background-color: rgb(48, 48, 48);
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+#delaysButton {
+-fx-background-image: url("delay.png");
+}
+
+#cancellationsButton {
+    -fx-background-image: url("cancel.png");
+}
+
+#homeButton {
+    -fx-background-image: url("home.png");
+}
+
+#routesButton {
+    -fx-background-image: url("route.png");
+}
+
+#locomotivesButton {
+    -fx-background-image: url("locomotive.png");
+}
+
+#driversButton {
+    -fx-background-image: url("driver.png");
+}
+
+
+
+
+#logoLabel {
+    -fx-font-size: 30;
+    -fx-text-fill: green;
+    -fx-font-family: "Courier New";
+}
+
+.jfx-hamburger {
+    -fx-background-color: rgb(48, 48, 48);
+}
+
+.jfx-hamburger:hover {
+    -fx-background-color: rgb(60, 60, 60);
+}
+
+.jfx-hamburger StackPane {
+	-fx-background-color: green;
+}
+
+#ticketsButton {
+    -fx-background-image: url("ticket.png");
+}
+
+#menu {
+    -fx-background-color: #88F;
+    -fx-spacing: 5;
+}

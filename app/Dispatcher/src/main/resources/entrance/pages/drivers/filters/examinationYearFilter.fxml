@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="200.0" prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.drivers.filters.DriverExaminationYearFilter">
+   <children>
+      <Label layoutX="42.0" layoutY="14.0" minWidth="30.0" prefHeight="30.0" prefWidth="158.0" stylesheets="@styles.css" text="YEAR" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="yearField" focusTraversable="false" layoutX="5.0" layoutY="125.0" minHeight="40.0" pickOnBounds="false" prefHeight="40.0" prefWidth="190.0" stylesheets="@styles.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+      <CheckBox fx:id="hadExamination" layoutX="5.0" layoutY="103.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" text="HAD EXAMINATION" AnchorPane.leftAnchor="5.0">
+         <font>
+            <Font name="Courier New" size="13.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

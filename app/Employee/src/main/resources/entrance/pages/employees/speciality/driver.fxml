@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.employee.speciality.driver.DriverSpecController">
+   <children>
+      <Label alignment="CENTER" layoutX="110.0" layoutY="23.0" minHeight="40.0" text="TEAM INFO" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="100.0" text="Team id:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="80.0" minHeight="40.0" prefHeight="40.0" prefWidth="100.0" text="Team type:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="teamId" layoutX="105.0" layoutY="62.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="334.0" stylesheets="@../styles.css" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+      <Label fx:id="teamType" layoutX="105.0" layoutY="90.0" minHeight="40.0" minWidth="200.0" prefHeight="40.0" prefWidth="294.0" stylesheets="@../styles.css" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
+      <ListView fx:id="medicalCard" focusTraversable="false" layoutX="14.0" layoutY="130.0" pickOnBounds="false" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="180.0" />
+      <Label alignment="CENTER" layoutX="10.0" layoutY="140.0" minHeight="40.0" text="MEDICAL EXAMINATIONS" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

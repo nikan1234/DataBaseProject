@@ -1,0 +1,172 @@
+
+.label {
+    -fx-text-fill: black;
+    -fx-font-size: 16;
+    -fx-font-family: "Courier New";
+}
+
+
+.button {
+    -fx-background-radius: 0;
+    -fx-background-color: rgb(48, 48, 48);
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-font-size: 14;
+    -fx-font-family: "Courier New";
+}
+
+
+#logoLabel {
+    -fx-text-fill: green;
+    -fx-font-family: "Courier New";
+    -fx-alignment: center;
+    -fx-font-size: 24;
+}
+
+
+.radio-button {
+    -fx-font-size: 14;
+    -fx-text-fill: black;
+    -fx-font-family: "Courier New";
+}
+
+.table-view .column-header-background{
+}
+
+.table-view .column-header-background .label{
+    -fx-font-size: 14;
+    -fx-text-fill: black;
+    -fx-font-family: "Courier New";
+}
+
+#resultLabel {
+    -fx-text-fill: black;
+    -fx-font-size: 16;
+    -fx-font-family: "Courier New";
+    -fx-alignment: center-left;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+}
+
+.table-row-cell {
+    -fx-cell-size: 50px;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  -fx-shape: null;
+}
+
+.table-view .column-header {
+    -fx-alignment: center;
+    -fx-font-size: 14;
+    -fx-text-fill: black;
+    -fx-font-family: "Courier New";
+}
+
+.table-view .table-cell{
+    -fx-alignment: center-left;
+    -fx-font-size: 14;
+    -fx-text-fill: black;
+    -fx-font-family: "Courier New";
+}
+
+.table-row-cell{
+    -fx-font-size: 14;
+    -fx-text-fill: black;
+    -fx-font-family: "Courier New";
+}
+
+.anchor-pane {
+    -fx-background-color: white;
+}
+
+.text-field {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 18;
+    -fx-text-fill: rgb(48, 48, 48);
+    -fx-background-color: -fx-text-box-border, white;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: green, white;
+}
+.combo-box .list-cell
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em;
+
+    -fx-font-family: "Courier New";
+    -fx-font-size: 18;
+    -fx-text-fill: rgb(48, 48, 48);
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: white, white;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-padding: 4 0 4 5;
+
+    /* No alternate highlighting */
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.combo-box-base
+{
+    -fx-background-color: white, white, green, white;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0 0 -1 0, 0, 1 1 0 1, 1;
+    -fx-padding: 0;
+}
+
+.combo-box-base:hover
+{
+    -fx-color: -fx-hover-base;
+}
+
+.combo-box-base:showing
+{
+    -fx-color: -fx-pressed-base;
+}
+
+.combo-box-base:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}

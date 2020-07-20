@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="50.0" minWidth="200.0" prefHeight="121.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.delays.filters.DelayDirectionFilter">
+   <children>
+      <Label alignment="CENTER" layoutX="38.0" layoutY="14.0" minWidth="30.0" prefHeight="30.0" prefWidth="200.0" style="-fx-text-fill: green;" text="SELECT STATION THAT" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Courier New" size="15.0" />
+         </font></Label>
+      <ComboBox fx:id="stationBox" focusTraversable="false" layoutX="14.0" layoutY="30.0" minHeight="40.0" pickOnBounds="false" prefWidth="150.0" stylesheets="@styles.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="60.0" />
+      <Label alignment="CENTER" layoutY="24.0" minWidth="30.0" prefHeight="30.0" prefWidth="200.0" style="-fx-text-fill: green;" text="INCLUDES IN THE ROUTE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Courier New" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+{
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+    -fx-font-family: "Courier New";
+}
+
+.anchor-pane {
+    -fx-background-color: rgb(48, 48, 48);
+}
+
+#loginButton {
+    -fx-background-color: green;
+}
+
+
+.text-field {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+    -fx-background-color: -fx-text-box-border, rgb(48, 48, 48);
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: green, rgb(48, 48, 48);
+}
+
+
+#settingsButton {
+    -fx-background-image: url("settings.png");
+    -fx-background-color: transparent;
+}
+
+
+#errorLabel {
+    -fx-text-fill: red;
+    -fx-alignment: center;
+}
+

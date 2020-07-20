@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="200.0" prefHeight="188.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.locomotives.filters.LocomotiveFlightsCount">
+   <children>
+      <Label layoutX="38.0" layoutY="14.0" minWidth="30.0" prefHeight="30.0" stylesheets="@styles.css" text="NUMBER OF FLIGHTS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="flightsCount" layoutX="7.0" layoutY="30.0" maxHeight="97.0" minHeight="40.0" prefWidth="190.0" stylesheets="@styles.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+      <JFXCheckBox fx:id="beforeRepair" layoutX="5.0" layoutY="90.0" prefHeight="19.0" prefWidth="181.0" text="Before repair" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font>
+      </JFXCheckBox>
+      <Label fx:id="repairDateLabel" layoutX="14.0" layoutY="124.0" minWidth="30.0" prefHeight="30.0" prefWidth="164.0" stylesheets="@styles.css" text="Repair date" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="130.0" />
+      <JFXDatePicker fx:id="repairDate" layoutX="15.0" layoutY="160.0" minHeight="40.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="160.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+.button {
+    -fx-background-color: rgb(48, 48, 48);
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.button:hover {
+    -fx-background-color: rgb(60, 60, 60);
+}
+
+
+#menu_button {
+    -fx-background-image: url("menu.png");
+}
+
+
+.label {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 24;
+}
+
+#flightNumberLabel {
+}
+
+#flightStatus {
+}
+
+#logo_label {
+    -fx-font-size: 30;
+    -fx-text-fill: green;
+    -fx-alignment: center;
+    -fx-font-family: "Courier New";
+}
+
+
+
+.jfx-hamburger {
+    -fx-background-color: rgb(48, 48, 48);
+}
+
+.jfx-hamburger:hover {
+    -fx-background-color: rgb(60, 60, 60);
+}
+
+.jfx-hamburger StackPane {
+	-fx-background-color: green;
+}
+
+#routeTable {
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+    -fx-font-family: "Courier New";
+}
+
+#delayCauseLabel {
+    -fx-text-fill: red;
+}
+
+#menu {
+    -fx-background-color: #88F;
+    -fx-spacing: 5;
+}

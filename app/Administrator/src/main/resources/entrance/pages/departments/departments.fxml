@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.departments.DepartmentsFormController">
+   <children>
+      <Label fx:id="logoLabel" layoutX="10.0" layoutY="10.0" maxHeight="40.0" minHeight="40.0" stylesheets="@styles.css" text="Departments" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TableView fx:id="departmentsTable" focusTraversable="false" layoutX="79.0" layoutY="84.0" pickOnBounds="false" prefHeight="200.0" prefWidth="200.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="50.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="30.0" layoutY="520.0" maxWidth="160.0" minHeight="40.0" minWidth="160.0" prefHeight="40.0" prefWidth="160.0" stylesheets="@styles.css" text="Department id" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="40.0" />
+      <TextField fx:id="departmentIdField" layoutX="221.0" layoutY="528.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="210.0" />
+      <TextField fx:id="departmentNameField" layoutX="231.0" layoutY="538.0" minHeight="40.0" minWidth="200.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="210.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="40.0" layoutY="530.0" maxWidth="160.0" minHeight="40.0" minWidth="160.0" prefHeight="40.0" prefWidth="160.0" stylesheets="@styles.css" text="Department name" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="40.0" />
+      <Button fx:id="addDepartmentButton" layoutX="844.0" layoutY="520.0" minHeight="40.0" minWidth="200.0" mnemonicParsing="false" stylesheets="@styles.css" text="Add new department" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="820.0" />
+      <Label fx:id="resultLabel" layoutX="1099.0" layoutY="530.0" minHeight="40.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="1080.0" AnchorPane.rightAnchor="50.0" />
+      <Button fx:id="removeDepartmentButton" layoutX="820.0" layoutY="588.0" minHeight="40.0" minWidth="200.0" mnemonicParsing="false" stylesheets="@styles.css" text="Remove department" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="820.0" />
+      <Button fx:id="editDepartmentButton" layoutX="820.0" layoutY="636.0" minHeight="40.0" minWidth="200.0" mnemonicParsing="false" stylesheets="@styles.css" text="Edit department" AnchorPane.bottomAnchor="30.0" />
+      <ComboBox fx:id="managersBox" focusTraversable="false" layoutX="454.0" layoutY="530.0" minHeight="40.0" minWidth="300.0" pickOnBounds="false" prefHeight="40.0" prefWidth="249.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="460.0" />
+   </children>
+</AnchorPane>

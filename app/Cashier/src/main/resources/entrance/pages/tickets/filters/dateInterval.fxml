@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.tickets.filters.DateIntervalFilter">
+   <children>
+      <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" stylesheets="@../styles.css" text="Purchase date" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXDatePicker fx:id="fromDate" focusTraversable="false" maxHeight="40.0" minHeight="40.0" pickOnBounds="false" stylesheets="@../../../jfx.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+      <JFXDatePicker fx:id="toDate" focusTraversable="false" layoutX="10.0" layoutY="10.0" maxHeight="40.0" minHeight="40.0" pickOnBounds="false" stylesheets="@../../../jfx.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="90.0" />
+   </children>
+</AnchorPane>

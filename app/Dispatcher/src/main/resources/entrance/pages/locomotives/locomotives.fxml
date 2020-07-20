@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="640.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.locomotives.LocomotiveFormController">
+   <children>
+      <TableView fx:id="locomotivesTable" focusTraversable="false" layoutX="124.0" layoutY="45.0" pickOnBounds="false" prefHeight="340.0" prefWidth="200.0" stylesheets="@styles.css" AnchorPane.leftAnchor="410.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="90.0" />
+      <Label fx:id="logoLabel" layoutX="152.0" layoutY="6.0" maxHeight="40.0" minHeight="40.0" stylesheets="@styles.css" text="Locomotives base" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <StackPane fx:id="filters" layoutX="182.0" layoutY="50.0" maxHeight="320.0" minHeight="320.0" minWidth="200.0" prefHeight="320.0" prefWidth="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="caseAllLocomotives" layoutX="27.0" layoutY="50.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="ALL LOCOMOTIVES" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="90.0" />
+      <Label alignment="CENTER" layoutX="30.0" layoutY="50.0" minHeight="30.0" minWidth="160.0" style="-fx-text-fill: green;" stylesheets="@styles.css" text="Search by" textFill="#00ff4d" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="Courier New" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="caseOnThisStation" layoutX="37.0" layoutY="60.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="ON THIS STATION" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="150.0" />
+      <Button fx:id="caseStationsArrival" layoutX="47.0" layoutY="70.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="STATIONS ARRIVAL" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="210.0" />
+      <Button fx:id="caseFlightsCount" layoutX="40.0" layoutY="285.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" stylesheets="@styles.css" text="FLIGHTS COUNT" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="270.0" />
+      <Button fx:id="searchButton" layoutX="221.0" layoutY="390.0" maxHeight="40.0" maxWidth="160.0" minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" stylesheets="@styles.css" text="SEARCH" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="390.0" />
+      <Label fx:id="locomotivesCount" layoutX="410.0" layoutY="519.0" prefHeight="30.0" prefWidth="160.0" stylesheets="@styles.css" AnchorPane.leftAnchor="410.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="450.0" />
+      <Button layoutX="220.0" layoutY="510.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" onMouseClicked="#addLocomotive" stylesheets="@styles.css" text="ADD LOCOMOTIVE" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="510.0" />
+      <Label alignment="CENTER" layoutX="216.0" layoutY="465.0" minHeight="30.0" minWidth="160.0" prefHeight="30.0" prefWidth="169.0" style="-fx-text-fill: green;" stylesheets="@styles.css" text="Actions:" textFill="#00ff4d" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="465.0">
+         <font>
+            <Font name="Courier New" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="219.0" layoutY="570.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" onMouseClicked="#removeLocomotive" stylesheets="@styles.css" text="REMOVE LOCOMOTIVE" AnchorPane.leftAnchor="219.0" AnchorPane.topAnchor="570.0" />
+      <Button fx:id="caseInspection" layoutX="30.0" layoutY="329.0" minHeight="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" stylesheets="@styles.css" text="HAD INSPECTION" AnchorPane.topAnchor="330.0" />
+      <Button fx:id="caseRepair" layoutX="30.0" layoutY="384.0" minHeight="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" stylesheets="@styles.css" text="HAD REPAIR" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="390.0" />
+      <Button fx:id="caseRepairsCount" layoutX="30.0" layoutY="445.0" minHeight="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" stylesheets="@styles.css" text="REPAIRS COUNT" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="450.0" />
+      <Button fx:id="caseLocomotiveAge" layoutX="30.0" layoutY="510.0" minHeight="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" stylesheets="@styles.css" text="LOCOMOTIVE AGE" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="510.0" />
+   </children>
+</AnchorPane>

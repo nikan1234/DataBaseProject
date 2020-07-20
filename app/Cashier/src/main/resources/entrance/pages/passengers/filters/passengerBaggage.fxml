@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.passengers.filters.PassengerBaggageFilter">
+   <children>
+      <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="Has baggage?" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <RadioButton fx:id="hasBaggage" mnemonicParsing="false" text="Yes" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="40.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="baggage" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton mnemonicParsing="false" text="No" toggleGroup="$baggage" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="80.0" />
+   </children>
+</AnchorPane>

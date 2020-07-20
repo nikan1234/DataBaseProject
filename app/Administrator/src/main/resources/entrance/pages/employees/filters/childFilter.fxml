@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="200.0" prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.employees.filters.ChildrenFilter">
+   <children>
+      <Label layoutX="38.0" layoutY="14.0" minWidth="30.0" prefHeight="30.0" stylesheets="@styles.css" text="Children" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <CheckBox fx:id="childrenCheckBox" layoutX="36.0" layoutY="38.0" maxWidth="40.0" minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" text="HAS CHILDREN?" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="childrenCountField" focusTraversable="false" layoutX="5.0" layoutY="125.0" minHeight="40.0" pickOnBounds="false" prefHeight="40.0" stylesheets="@styles.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="160.0" />
+      <Label fx:id="childLabel" layoutX="23.0" layoutY="80.0" minHeight="30.0" stylesheets="@styles.css" text="Children count" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="120.0" />
+   </children>
+</AnchorPane>

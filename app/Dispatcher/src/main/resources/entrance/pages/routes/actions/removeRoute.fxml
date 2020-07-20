@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.routes.actions.remove.RemoveRouteFormController">
+   <children>
+      <Label fx:id="logoLabel" focusTraversable="false" layoutX="68.0" layoutY="83.0" minHeight="40.0" pickOnBounds="false" stylesheets="@styles.css" text="Remove route" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="routeId" focusTraversable="false" layoutX="130.0" layoutY="494.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="100.0" />
+      <Label focusTraversable="false" layoutX="30.0" layoutY="494.0" minHeight="40.0" minWidth="100.0" pickOnBounds="false" prefHeight="40.0" prefWidth="106.0" stylesheets="@styles.css" text="Route id:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="100.0" />
+      <Button fx:id="removeRoute" focusTraversable="false" layoutX="40.0" layoutY="563.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="40.0" prefWidth="360.0" stylesheets="@styles.css" text="REMOVE ROUTE" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="190.0" />
+      <Button focusTraversable="false" layoutX="30.0" layoutY="713.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onMouseClicked="#onPrevButtonClicked" pickOnBounds="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" text="GO BACK" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" />
+      <Label fx:id="finalLabel" alignment="TOP_LEFT" focusTraversable="false" layoutX="426.0" layoutY="196.0" minWidth="150.0" pickOnBounds="false" prefHeight="112.0" prefWidth="582.0" AnchorPane.bottomAnchor="486.0" AnchorPane.leftAnchor="426.0" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="196.0">
+         <font>
+            <Font name="Courier New" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+package com.railway.ui.window.common.listControllers.teams;
+
+import com.railway.ui.window.common.entity.Team;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.ComboBox;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+
+public class TeamListController {
+    private ComboBox<String> box;
+    private List<Team> teams;
+    private TeamListModel model = new TeamListModel();
+
+
+    public static final int NO_TEAM = -1;
+
+    public TeamListController(ComboBox<String> box) {
+        this.box = box;
+        this.teams = model.getTeamList();
+
+        ObservableList<String> items = FXCollections.observableList(teams
+                .stream().map(t -> {
+                    final char sep = ' ';
+                    return Integer.toString(t.getTeamId()) +
+                            sep + t.getTeamType();
+                }).collect(Collectors.toList()));
+        items.add(0, "Any team");
+
+        box.setItems(items);
+        box.setValue(items.get(0));
+    }
+
+    public int getSelectedTeamId() {
+        int idx = box.getSelectionModel().getSelectedIndex();
+        if (idx <= 0 ) {
+            return NO_TEAM;
+        }
+        return teams.get(idx - 1).getTeamId();
+    }
+
+    public Team getSelectedTeam() {
+        int idx = box.getSelectionModel().getSelectedIndex();
+        if (idx <= 0 ) {
+            return null;
+        }
+        return teams.get(idx - 1);
+    }
+
+    public void selectTeam(Team team) {
+        if (team == null) {
+            box.setValue(box.getItems().get(0));
+        }
+        int idx = teams.indexOf(team);
+        if (idx != -1) {
+            box.setValue(box.getItems().get(idx + 1));
+        }
+    }
+
+    public static List<Team> getTeams() {
+        return new TeamListModel().getTeamList();
+    }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="917.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.timetable.actions.add.AddFlightFormController">
+   <children>
+      <Label fx:id="logoLabel" layoutX="78.0" layoutY="36.0" minHeight="40.0" stylesheets="@styles.css" text="Add flight" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="78.0" layoutY="60.0" prefHeight="40.0" prefWidth="85.0" stylesheets="@styles.css" text="Flight #" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="60.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="78.0" layoutY="120.0" prefHeight="40.0" prefWidth="85.0" stylesheets="@styles.css" text="Day:" AnchorPane.topAnchor="120.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="78.0" layoutY="180.0" prefHeight="40.0" prefWidth="85.0" stylesheets="@styles.css" text="Time:" AnchorPane.topAnchor="180.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="78.0" layoutY="240.0" prefHeight="40.0" prefWidth="85.0" stylesheets="@styles.css" text="Type:" AnchorPane.topAnchor="240.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="56.0" layoutY="300.0" prefHeight="40.0" prefWidth="107.0" stylesheets="@styles.css" text="Locomotive:" AnchorPane.topAnchor="300.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="56.0" layoutY="360.0" prefHeight="40.0" prefWidth="107.0" stylesheets="@styles.css" text="Route:" AnchorPane.topAnchor="360.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="43.0" layoutY="420.0" prefHeight="40.0" prefWidth="120.0" stylesheets="@styles.css" text="Ticket cost:" />
+      <Button layoutX="168.0" layoutY="498.0" minHeight="40.0" mnemonicParsing="false" onMouseClicked="#addFlightButton" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" text="ADD FLIGHT" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="490.0" />
+      <Button layoutX="52.0" layoutY="565.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" onMouseClicked="#onPrevButtonClicked" stylesheets="@styles.css" text="GO BACK" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" />
+      <TextField fx:id="flightNumber" layoutX="168.0" layoutY="60.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="60.0" />
+      <JFXDatePicker fx:id="flightDate" layoutX="168.0" layoutY="120.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="120.0" />
+      <JFXTimePicker fx:id="flightTime" layoutX="168.0" layoutY="180.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="180.0" />
+      <ComboBox fx:id="flightType" focusTraversable="false" layoutX="168.0" layoutY="240.0" minHeight="40.0" minWidth="250.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="240.0" />
+      <ComboBox fx:id="locomotive" focusTraversable="false" layoutX="168.0" layoutY="300.0" minHeight="40.0" minWidth="250.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="300.0" />
+      <ComboBox fx:id="route" focusTraversable="false" layoutX="168.0" layoutY="360.0" minHeight="40.0" minWidth="250.0" pickOnBounds="false" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="360.0" />
+      <TextField fx:id="ticketCost" layoutX="168.0" layoutY="420.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" stylesheets="@styles.css" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="420.0" />
+      <Label alignment="CENTER" layoutX="496.0" layoutY="372.0" minHeight="40.0" minWidth="100.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="Arrival time:" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="360.0" />
+      <Label fx:id="arrivalDate" alignment="CENTER" layoutX="500.0" layoutY="393.0" minHeight="40.0" minWidth="100.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="390.0" />
+      <Label fx:id="resultLabel" alignment="TOP_LEFT" layoutX="436.0" layoutY="499.0" minHeight="40.0" minWidth="100.0" prefHeight="76.0" prefWidth="431.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="499.0" />
+      <JFXCheckBox fx:id="addInspection" layoutX="483.0" layoutY="240.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@styles.css" text="ADD INSPECTION" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="240.0">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="addRepair" layoutX="500.0" layoutY="280.0" prefHeight="40.0" prefWidth="270.0" stylesheets="@styles.css" text="ADD LOCOMOTIVE REPAIR">
+         <font>
+            <Font name="Courier New" size="16.0" />
+         </font>
+      </JFXCheckBox>
+   </children>
+</AnchorPane>

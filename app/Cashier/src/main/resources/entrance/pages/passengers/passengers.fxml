@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.passengers.PassengersFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Button fx:id="caseFlightNumber" layoutX="26.0" layoutY="53.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" text="Flight №" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
+            <Label layoutX="86.0" layoutY="86.0" maxHeight="30.0" maxWidth="160.0" minHeight="30.0" minWidth="160.0" prefHeight="30.0" prefWidth="160.0" stylesheets="@styles.css" text="Search by:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <Button fx:id="caseFlightDay" layoutX="14.0" layoutY="110.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" text="Flight day" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0" />
+            <Button fx:id="casePassengerAge" layoutX="14.0" layoutY="192.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" text="Passenger age" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="190.0" />
+            <Button fx:id="casePassengerGender" layoutX="20.0" layoutY="265.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" text="Passenger gender" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="260.0" />
+            <Button fx:id="casePassengerBaggage" layoutX="14.0" layoutY="317.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="160.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" text="Has baggage" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="330.0" />
+            <StackPane fx:id="filters" layoutX="364.0" layoutY="115.0" maxHeight="300.0" minHeight="300.0" minWidth="200.0" prefHeight="300.0" prefWidth="200.0" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="10.0" />
+            <Button fx:id="searchButton" layoutX="201.0" layoutY="321.0" maxHeight="40.0" maxWidth="190.0" minHeight="40.0" minWidth="190.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" stylesheets="@styles.css" text="Search" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="330.0" />
+            <Label fx:id="passengerCount" layoutX="450.0" layoutY="398.0" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" stylesheets="@styles.css" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="380.0" />
+            <TableView fx:id="passengersTableView" focusTraversable="false" layoutX="499.0" layoutY="60.0" maxHeight="320.0" minHeight="320.0" pickOnBounds="false" prefHeight="320.0" stylesheets="@styles.css" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="logo" layoutX="80.0" layoutY="6.0" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" style="-fx-background-color: white;" stylesheets="@styles.css" text="Passengers base" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

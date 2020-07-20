@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minWidth="200.0" prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.drivers.filters.DriverSalaryFilter">
+   <children>
+      <Label layoutX="42.0" layoutY="14.0" minWidth="30.0" prefHeight="30.0" prefWidth="158.0" stylesheets="@styles.css" text="Salary" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="minSalary" focusTraversable="false" layoutX="45.0" layoutY="125.0" minHeight="40.0" pickOnBounds="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+      <Label layoutX="8.0" layoutY="40.0" prefHeight="40.0" prefWidth="32.0" stylesheets="@styles.css" text="MIN" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="160.0" />
+      <TextField fx:id="maxSalary" focusTraversable="false" layoutX="45.0" layoutY="88.0" minHeight="40.0" pickOnBounds="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@styles.css" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="90.0" />
+      <Label layoutX="7.0" layoutY="88.0" prefHeight="40.0" prefWidth="32.0" stylesheets="@styles.css" text="MAX" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="90.0" />
+   </children>
+</AnchorPane>

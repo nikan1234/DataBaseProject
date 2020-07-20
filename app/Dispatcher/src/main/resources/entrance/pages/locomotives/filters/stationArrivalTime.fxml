@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.locomotives.filters.StationArrivalTime">
+   <children>
+      <Label alignment="CENTER" layoutX="38.0" layoutY="14.0" minWidth="30.0" prefHeight="30.0" style="-fx-text-fill: green;" text="Located on station at" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Courier New" size="15.0" />
+         </font></Label>
+      <JFXDatePicker fx:id="datePicker" focusTraversable="false" layoutX="29.0" minHeight="40.0" pickOnBounds="false" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0" />
+      <JFXTimePicker fx:id="timePicker" layoutX="-14.0" layoutY="16.0" minHeight="40.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="160.0" />
+      <ComboBox fx:id="stationBox" focusTraversable="false" layoutX="5.0" layoutY="43.0" minHeight="40.0" pickOnBounds="false" prefWidth="150.0" stylesheets="@styles.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

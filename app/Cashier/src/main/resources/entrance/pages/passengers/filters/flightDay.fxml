@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.railway.ui.window.entrance.pages.passengers.filters.FlightDayFilter">
+   <children>
+      <ComboBox fx:id="routeTypeBox" focusTraversable="false" maxHeight="40.0" minHeight="40.0" pickOnBounds="false" prefHeight="40.0" prefWidth="150.0" stylesheets="@../styles.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="180.0" />
+      <Label minHeight="40.0" prefHeight="40.0" stylesheets="@../styles.css" text="Route Type" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0" />
+      <JFXDatePicker fx:id="calendar" focusTraversable="false" maxWidth="40.0" minHeight="40.0" pickOnBounds="false" stylesheets="@../../../jfx.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

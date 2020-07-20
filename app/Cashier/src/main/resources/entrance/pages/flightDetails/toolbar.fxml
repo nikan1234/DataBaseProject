@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxWidth="200.0" prefWidth="200.0" style="-fx-background-color: rgba(48, 48, 48, 0.9);" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button minHeight="60.0" minWidth="200.0" mnemonicParsing="false" style="-fx-background-color: rgba(48, 48, 48, 0.0);" stylesheets="@styles.css" text="Test" />
+      <Button minHeight="60.0" minWidth="200.0" mnemonicParsing="false" style="-fx-background-color: rgba(48, 48, 48, 0.0);" stylesheets="@styles.css" text="Lol" />
+   </children>
+</VBox>
